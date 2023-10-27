@@ -11,10 +11,7 @@
         #imglog {
             overflow: hidden;
             height: 300px;
-            background-image: url("./img/negoc.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: url("./img/negoc.jpg") center/cover no-repeat;
         }
     </style>
 </head>
@@ -24,7 +21,7 @@
 
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="row w-100">
-            <div class="col-12 col-md-6 mb-5">
+            <div class="col-12 col-md-6 mb-5 order-2 order-md-1">
                 <form action="" method="post">
                     <h1 class="mb-3 display-5">Acesse sua conta</h1>
                     <div class="form-floating">
@@ -45,7 +42,7 @@
                 </form>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 mb-5 order-1 order-md-2">
                 <div id="imglog" class=""></div>
             </div>
         </div>
