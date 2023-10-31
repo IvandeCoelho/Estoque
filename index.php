@@ -49,7 +49,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
     #imglog {
       overflow: hidden;
       height: 300px;
-      background: url("./img/negoc.jpg") center/cover no-repeat;
+      background: url("./img/negod.jpg") center/cover no-repeat;
     }
   </style>
 </head>
