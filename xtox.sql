@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22/10/2023 às 00:05
+-- Tempo de geração: 27/10/2023 às 23:46
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.0.28
 
@@ -35,6 +35,16 @@ CREATE TABLE `cadastro` (
   `NF` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `Valor` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Despejando dados para a tabela `cadastro`
+--
+
+INSERT INTO `cadastro` (`idProduto`, `Nome`, `CNPJ`, `Descricao`, `NF`, `Valor`) VALUES
+(6, 'PÃ£o', '1122554656', 'pÃ£o para comer', '5152', '5000'),
+(7, 'PÃ£o de hoje', '1122554656', 'pÃ£o fresco', '5152', '5000'),
+(8, 'goiaba', '1122554656', 'Fruta', '101', '100'),
+(9, 'rapadura ', '65115151651', 'rapadura verde', '6556', '5');
 
 -- --------------------------------------------------------
 
@@ -80,7 +90,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `idProduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idProduto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
